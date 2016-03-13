@@ -7,13 +7,21 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias u="vagrant up"
+alias v="vagrant ssh"
+alias g="git"
+alias gs="git status"
+alias gp="git pull"
+alias gdc="git diff --cached"
+alias out="python -mjson.tool"
+alias dps="docker ps -a"
+alias tf="terraform"
+alias cl="docker ps -a | grep -v CONTAINER | awk '{ print \$1 }' | xargs docker rm -vf"
+
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
-alias g="git"
+alias p="cd ~/work/projects"
 alias h="history"
-alias j="jobs"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
