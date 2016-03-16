@@ -6,8 +6,8 @@ plugins=(git docker ssh-agent zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-source ~/.nvm/nvm.sh
-
-export PROMPT="%* $PROMPT"
+source ~/.dotfiles/.path
+source ~/.dotfiles/.exports
+source ~/.dotfiles/.aliases
+source ~/.dotfiles/.functions
+source ~/.extra
